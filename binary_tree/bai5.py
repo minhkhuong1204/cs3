@@ -64,4 +64,8 @@ def tree_to_json(root):
 tree_json = tree_to_json(root)
 # print(json.dumps(tree_json, indent=4))
 
-print(search(root, 4000).name)
+finded_phone = search(root, 10000)
+if finded_phone:
+    print(finded_phone.name)
+else:
+    print("404 Not Found")
